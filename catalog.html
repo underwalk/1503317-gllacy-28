@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <header>
-      <img src="img/logo.svg" height="154" width="64" alt="Logo">
+      <img src="./img/logo.svg" height="154" width="64" alt="Logo">
       <nav>
         <ul>
           <li><a href="/catalog.html">Каталог</a></li>
@@ -37,19 +38,86 @@
     <h2>Сливочное мороженое</h2>
 
     <section>
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <input id= "filter-sort" list="filter-list-sort" name="sort">
+        <label for="filter-sort">Сортировка:</label>
+        <datalist id="filter-list-sort">
+          <option value="по популярности"></option>
+          <option value="сначала не дорогие"></option>
+          <option value="сначала дорогие"></option>
+          <option value="по жирности"></option>
+        </datalist>
+
+        <label for="filter-range-price">Цена: 100 &#8381; - 500 &#8381;</label>
+        <input type="range" id="filter-price" name="price" min="100" max="500">
+
+        <fieldset>
+          <legend>Жирность:</legend>
+          <ul>
+            <li>
+              <label for="filter-chebox-richness-lt">
+                <input type="checkbox" id="filter-chebox-richness-lt-0" name="richness-0">0%</label>
+            </li>
+            <li>
+              <input type="checkbox" id="filter-chebox-richness-lt-10" name="richness-lt-10">
+              <label for="filter-chebox-richness-lt-10">до 10%</label>
+            </li>
+            <li>
+              <input type="checkbox" id="filter-chebox-richness-lt-30" name="richness-lt-30">
+              <label for="filter-chebox-richness-lt-30">до 30%</label>
+            </li>
+            <li>
+              <input type="checkbox" id="filter-chebox-richness-gt-30" name="richness-gt-10">
+              <label for="filter-chebox-richness-gt-30">выше 30%</label>  
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Наполнители:</legend>
+          <ul>
+            <li>
+              <label for="filter-chebox-extender">
+                <input type="checkbox" id="filter-chebox-extender-сhocolate" name="extender-сhocolate">Шоколодные</label>
+            </li>
+            <li>
+              <input type="checkbox" id="filter-chebox-extender-sugar-sprinkles" name="extender-sugar-sprinkles">
+              <label for="filter-chebox-extender-sugar-sprinkles">Сахарные присыпки</label>
+            </li>
+            <li>
+              <input type="checkbox" id="filter-chebox-extender-fruits" name="extender-fruits">
+              <label for="filter-chebox-extender-fruits">Фрукты</label>
+            </li>
+            <li>
+              <input type="checkbox" id="filter-chebox-extender-syrup" name="extender-syrup">
+              <label for="filter-chebox-extender-syrup">Сиропы</label>  
+            </li>
+            <li>
+              <input type="checkbox" id="filter-chebox-extender-jams" name="extender-jams">
+              <label for="filter-chebox-extender-jams">Джемы</label>  
+            </li>
+          </ul>
+        </fieldset>
+
+        <button type="submit">Применить</button>
+      </form>
+    </section>
+
+    <section>
         <ul>
-          <li><img src="/img/scream.png" alt="Scream"><p>310 &#8381;/кг </p> <a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></li>
-          <li><img src="/img/scream.png" alt="Scream"><p>380 &#8381;/кг </p> <a href="">Сливочно-кофейное с кусочками шоколада</a></li>
-          <li><img src="/img/scream.png" alt="Scream"><p>355 &#8381;/кг </p> <a href="">Сливочно-клубничное с присыпкой из белого шоколада</a></li>
-          <li><img src="/img/scream.png" alt="Scream"><p>325 &#8381;/кг </p> <a href="">Сливочное крем-брюле с карамельной подливкой</a></li>
-          <li><img src="/img/scream.png" alt="Scream"><p>410 &#8381;/кг </p> <a href="">Сливочное с брусничным джемом</a></li>
-          <li><img src="/img/scream.png" alt="Scream"><p>315 &#8381;/кг </p> <a href="">Сливочно-черничное с цельными ягодами черники</a></li>
-          <li><img src="/img/scream.png" alt="Scream"><p>440 &#8381;/кг </p> <a href="">Сливочно-лимонное с карамельной присыпкой</a></li>
-          <li><img src="/img/scream.png" alt="Scream"><p>435 &#8381;/кг </p> <a href="">Сливочное с шоколадной стружкой</a></li>
-          <li><img src="/img/scream.png" alt="Scream"><p>355 &#8381;/кг </p> <a href="">Сливочно-ванильное с кусочками шоколада</a></li>
-          <li><img src="/img/scream.png" alt="Scream"><p>415 &#8381;/кг </p> <a href="">Сливочноe с ментоловым сиропом</a></li>
-          <li><img src="/img/scream.png" alt="Scream"><p>320 &#8381;/кг </p> <a href="">Сливочное с кусочками черного шоколада</a></li>
-          <li><img src="/img/scream.png" alt="Scream"><p>420 &#8381;/кг </p> <a href="">Сливочное с мятным сиропом</a></li>
+          <li><img src="./img/cream.svg" alt="cream"><p>310 &#8381;/кг </p> <a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></li>
+          <li><img src="./img/cream.svg" alt="cream"><p>380 &#8381;/кг </p> <a href="">Сливочно-кофейное с кусочками шоколада</a></li>
+          <li><img src="./img/cream.svg" alt="cream"><p>355 &#8381;/кг </p> <a href="">Сливочно-клубничное с присыпкой из белого шоколада</a></li>
+          <li><img src="./img/cream.svg" alt="cream"><p>325 &#8381;/кг </p> <a href="">Сливочное крем-брюле с карамельной подливкой</a></li>
+          <li><img src="./img/cream.svg" alt="cream"><p>410 &#8381;/кг </p> <a href="">Сливочное с брусничным джемом</a></li>
+          <li><img src="./img/cream.svg" alt="cream"><p>315 &#8381;/кг </p> <a href="">Сливочно-черничное с цельными ягодами черники</a></li>
+          <li><img src="./img/cream.svg" alt="cream"><p>440 &#8381;/кг </p> <a href="">Сливочно-лимонное с карамельной присыпкой</a></li>
+          <li><img src="./img/cream.svg" alt="cream"><p>435 &#8381;/кг </p> <a href="">Сливочное с шоколадной стружкой</a></li>
+          <li><img src="./img/cream.svg" alt="cream"><p>355 &#8381;/кг </p> <a href="">Сливочно-ванильное с кусочками шоколада</a></li>
+          <li><img src="./img/cream.svg" alt="cream"><p>415 &#8381;/кг </p> <a href="">Сливочноe с ментоловым сиропом</a></li>
+          <li><img src="./img/cream.svg" alt="cream"><p>320 &#8381;/кг </p> <a href="">Сливочное с кусочками черного шоколада</a></li>
+          <li><img src="./img/cream.svg" alt="cream"><p>420 &#8381;/кг </p> <a href="">Сливочное с мятным сиропом</a></li>
         </ul>
     </section>
 
