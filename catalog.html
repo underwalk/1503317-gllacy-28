@@ -40,8 +40,8 @@
     <section>
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
-        <input id= "filter-sort" list="filter-list-sort" name="sort">
         <label for="filter-sort">Сортировка:</label>
+        <input id= "filter-sort" list="filter-list-sort" name="sort">
         <datalist id="filter-list-sort">
           <option value="по популярности"></option>
           <option value="сначала не дорогие"></option>
@@ -50,26 +50,26 @@
         </datalist>
 
         <label for="filter-range-price">Цена: 100 &#8381; - 500 &#8381;</label>
-        <input type="range" id="filter-price" name="price" min="100" max="500">
+        <input type="range" id="filter-range-price" name="price" min="100" max="500">
 
         <fieldset>
           <legend>Жирность:</legend>
           <ul>
             <li>
-              <label for="filter-chebox-richness-lt">
-                <input type="checkbox" id="filter-chebox-richness-lt-0" name="richness-0">0%</label>
+              <label for="filter-checkbox-richness-lt-0">0%</label>
+              <input type="checkbox" id="filter-checkbox-richness-lt-0" name="richness-0">
             </li>
             <li>
-              <input type="checkbox" id="filter-chebox-richness-lt-10" name="richness-lt-10">
-              <label for="filter-chebox-richness-lt-10">до 10%</label>
+              <label for="filter-checkbox-richness-lt-10">до 10%</label>
+              <input type="checkbox" id="filter-checkbox-richness-lt-10" name="richness-lt-10">
             </li>
             <li>
-              <input type="checkbox" id="filter-chebox-richness-lt-30" name="richness-lt-30">
-              <label for="filter-chebox-richness-lt-30">до 30%</label>
+              <label for="filter-checkbox-richness-lt-30">до 30%</label>
+              <input type="checkbox" id="filter-checkbox-richness-lt-30" name="richness-lt-30">
             </li>
             <li>
-              <input type="checkbox" id="filter-chebox-richness-gt-30" name="richness-gt-30">
-              <label for="filter-chebox-richness-gt-30">выше 30%</label>  
+              <label for="filter-checkbox-richness-gt-30">выше 30%</label>  
+              <input type="checkbox" id="filter-checkbox-richness-gt-30" name="richness-gt-30">
             </li>
           </ul>
         </fieldset>
@@ -78,24 +78,24 @@
           <legend>Наполнители:</legend>
           <ul>
             <li>
-              <label for="filter-chebox-extender">
-                <input type="checkbox" id="filter-chebox-extender-сhocolate" name="extender-сhocolate">Шоколодные</label>
+              <label for="filter-checkbox-extender-сhocolate">Шоколодные</label>
+              <input type="checkbox" id="filter-checkbox-extender-сhocolate" name="extender-сhocolate">
             </li>
             <li>
-              <input type="checkbox" id="filter-chebox-extender-sugar-sprinkles" name="extender-sugar-sprinkles">
-              <label for="filter-chebox-extender-sugar-sprinkles">Сахарные присыпки</label>
+              <label for="filter-checkbox-extender-sugar-sprinkles">Сахарные присыпки</label>
+              <input type="checkbox" id="filter-checkbox-extender-sugar-sprinkles" name="extender-sugar-sprinkles">
             </li>
             <li>
-              <input type="checkbox" id="filter-chebox-extender-fruits" name="extender-fruits">
-              <label for="filter-chebox-extender-fruits">Фрукты</label>
+              <label for="filter-checkbox-extender-fruits">Фрукты</label>
+              <input type="checkbox" id="filter-checkbox-extender-fruits" name="extender-fruits">
             </li>
             <li>
-              <input type="checkbox" id="filter-chebox-extender-syrup" name="extender-syrup">
-              <label for="filter-chebox-extender-syrup">Сиропы</label>  
+              <label for="filter-checkbox-extender-syrup">Сиропы</label>  
+              <input type="checkbox" id="filter-checkbox-extender-syrup" name="extender-syrup">
             </li>
             <li>
-              <input type="checkbox" id="filter-chebox-extender-jams" name="extender-jams">
-              <label for="filter-chebox-extender-jams">Джемы</label>  
+              <label for="filter-checkbox-extender-jams">Джемы</label>  
+              <input type="checkbox" id="filter-checkbox-extender-jams" name="extender-jams">
             </li>
           </ul>
         </fieldset>
