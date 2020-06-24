@@ -8,3 +8,75 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+.i-search {
+  display: block;
+  text-indent: 32px;
+  width: 32px;
+  height: 32px;
+  background: url(../img/icons/i-search.svg);
+  background-size: 32px 32px;
+}
+
+.i-shop {
+  display: block;
+  text-indent: 32px;
+  width: 32px;
+  height: 32px;
+  background: url(../img/icons/i-shop.svg);
+  background-size: 32px 32px;
+}
+
+.i-login {
+  display: block; 
+  text-indent: 32px;
+  width: 32px;
+  height: 32px;
+  background: url(../img/icons/i-login.svg);
+  background-size: 32px 32px;
+}
+
+.i-facebook {
+  display: block; 
+  text-indent: 32px;
+  width: 32px;
+  height: 32px;
+  background: url(../img/icons/i-facebook.svg);
+  background-size: 32px 32px;
+}
+
+.i-instagram {
+  display: block; 
+  text-indent: 32px;
+  width: 32px;
+  height: 32px;
+  background: url(../img/icons/i-instagram.svg);
+  background-size: 32px 32px;
+}
+
+.i-vk {
+  display: block; 
+  text-indent: 32px;
+  width: 32px;
+  height: 32px;
+  background: url(../img/icons/i-vk.svg);
+  background-size: 32px 32px;
+}
+
+.i-twitter {
+  display: block; 
+  text-indent: 32px;
+  width: 32px;
+  height: 32px;
+  background: url(../img/icons/i-twitter.svg);
+  background-size: 32px 32px;
+}
+
+.i-heart {
+  display: block; 
+  text-indent: 32px;
+  width: 32px;
+  height: 32px;
+  background: url(../img/icons/i-heart.svg);
+  background-size: 32px 32px;
+}
