@@ -5,28 +5,61 @@
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="./css/styles.css">
   </head>
-  <body>
-    <header>
-      <img src="./img/logo.svg" height="154" width="64" alt="Logo">
-      <nav>
-        <ul>
-          <li><a href="/catalog.html">Каталог</a></li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О компании</a></li>
-        </ul>
-      </nav>
-        
-      <div>
-        <a href="" class="icon i-search"></a>
-        <a href="" class="icon i-login">Вход</a>
-        <a href="" class="icon i-shop">2 товара</a>
+  <header>
+    <img src="./img/logo.svg" height="154" width="64" alt="Logo">
+    <nav>
+      <ul>
+        <li><a href="/catalog.html">Каталог</a>
+          <ul hidden>
+            <li><a href="#">Новинки</a></li>
+            <li><a href="#">Сливочные</a></li>
+            <li><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">О компании</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <a href="" class="icon i-search"></a>
+      <input type="search" placeholder="Крем-брюле" hidden/>
+      <a href="" class="icon i-login">Вход</a>
+      <form action="post" id="login" hidden>
+        <input type="email" name="email" placeholder="email@example.com" required/>
+        <input type="password" name="password" placeholder="********"/>
+        <input type="submit" name="login" value="Войти">
+        <a href="">Забыли пароль?</a>
+        <a href="">Новая регистрация</a>
+      </form>
+      <a href="" class="icon i-shop">2 товара</a>
+      <div id="shop_popup">
+        <table>
+          <tr>
+            <td><button id="shop-item_remove_1"></button></td>
+            <td><img src="img/shop-items/item-1-1.png" alt="" height="60" width="60"/></td>
+            <td>1.5 кг х 200 руб.</td>
+            <td>300 руб.</td>
+          </tr>
+          <tr>
+            <td><button id="shop-item_remove_2"></button></td>
+            <td><img src="img/shop-items/item-1-3.png" alt="" height="60" width="60"/></td>
+            <td>1.5 кг х 300 руб.</td>
+            <td>450 руб.</td>
+          </tr>
+        </table>
+        Итого: 750 руб.
+        <a href="">Оформить заказ</a>
       </div>
-      
-      <div>
-        <p>c 10 до 20, ежедневно</p>
-        <a href="tel:88124502525">8 812 450-25-25</a>
-      </div>
-    </header>
+    </div>
+
+    <div>
+      <p>c 10 до 20, ежедневно</p>
+      <a href="tel:88124502525">8 812 450-25-25</a>
+    </div>
+  </header>
 
     <div>
       <a href="/index.html">Главная</a>
@@ -143,5 +176,14 @@
         <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
       </div>
     </footer>
+
+    <form id="feedback" hidden>
+      <h2>Мы обязательно вам ответим</h2>
+      <button id="feedback_close"></button>
+      <input type="text" placeholder="Имя Фамилия" required>
+      <input type="email" placeholder="email@example.com" required>
+      <textarea placeholder="В свободной форме" rows="5" required></textarea>
+      <input type="submit" name="send_feedback" value="Отправить"/>
+    </form>
   </body>
 </html>
