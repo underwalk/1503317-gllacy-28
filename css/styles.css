@@ -13,6 +13,7 @@
   --button-background-gradient-main: #F26843;
   --button-background-gradient-second: #E74A35;
   --cinnabar: #E84D37;
+  --very-dark-gray: #5A5A5A;
 }
 
 body{
@@ -296,6 +297,9 @@ legend.filter__text-label {
 .about-info__list-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-row-gap: 33px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .news-blog__text{
@@ -325,6 +329,14 @@ legend.filter__text-label {
   top: 1626px;
   margin-top: 40px;
   border-radius: 16px;
+}
+
+.mailing-subscribe__text{
+  font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+color: var(--very-dark-gray);
+
 }
 
 .mailing-subscribe__container {
