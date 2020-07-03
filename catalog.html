@@ -13,9 +13,9 @@
     <div class="header__left-container">
       <img src="./img/logo.svg" height="64" width="154" alt="Logo">
       <nav class="header__main-navigation">
-        <ul>
+        <ul class="unsorted-list">
           <li class="unmarked_list-item"><a href="catalog.html" class="main-navigation__menu-item-link">Каталог</a>
-            <ul hidden>
+            <ul class="unsorted-list" hidden>
               <li class="unmarked_list-item"><a href="#" class="main-navigation__menu-item-link">Новинки</a></li>
               <li class="unmarked_list-item"><a href="#" class="main-navigation__menu-item-link">Сливочные</a></li>
               <li class="unmarked_list-item"><a href="#" class="main-navigation__menu-item-link">Щербеты</a></li>
@@ -33,7 +33,6 @@
 
     <div class="header__right-container">
       <div class="header__user-navigation">
-
         <a class="header__user-navigation_search" href=""><span class="i-search icon-bg"></span></a>
         <input type="search" placeholder="Крем-брюле" hidden />
         <a id="login-link" href="" class="header__user-navigation_container-icon header__user-navigation_icon-hover">
@@ -69,9 +68,9 @@
       </div>
     </div>
     <div class="catalog__navigation">
-      <a href="index.html">Главная </a>
+      <a class="link__hovered-color" href="index.html">Главная </a>
       <span class="raquo"> &raquo; </span>
-      <a href="catalog.html">Каталог </a>
+      <a class="link__hovered-color" href="catalog.html">Каталог </a>
       <span class="raquo"> &raquo; </span>
       <a>Сливочное</a>
     </div>
@@ -94,10 +93,10 @@
             <legend class="filter__text-label">Сортировка:</legend>
             <select id="filter-sort" list="filter-list-sort" name="sort" value="по популярности"
               class="filter__text-inside filter__input-sort">
-              <option class="filter__text-inside" value="по популярности">по популярности</option>
-              <option class="filter__text-inside" value="сначала не дорогие">сначала не дорогие</option>
-              <option class="filter__text-inside" value="сначала дорогие">сначала дорогие</option>
-              <option class="filter__text-inside" value="по жирности">по жирности</option>
+              <option class="filter__option_text-inside" value="по популярности">по популярности</option>
+              <option class="filter__option_text-inside" value="сначала не дорогие">сначала не дорогие</option>
+              <option class="filter__option_text-inside" value="сначала дорогие">сначала дорогие</option>
+              <option class="filter__option_text-inside" value="по жирности">по жирности</option>
             </select>
         </fieldset>
 
@@ -109,23 +108,23 @@
 
         <fieldset>
           <legend class="filter__text-label">Жирность:</legend>
-          <ul class="filter__bordered-background">
-            <li>
+          <ul class="unsorted-list filter__bordered-background">
+            <li class="unmarked_list-item">
               <input class="filter__radio-checkbox" type="radio" id="filter-checkbox-richness-lt-0" value="richness-0"
                 name="filter__richness-group">
               <label class="filter__text-inside" for="filter-checkbox-richness-lt-0">0%</label>
             </li>
-            <li>
+            <li class="unmarked_list-item">
               <input class="filter__radio-checkbox" type="radio" id="filter-checkbox-richness-lt-10"
                 value="richness-lt-10" name="filter__richness-group">
               <label class="filter__text-inside" for="filter-checkbox-richness-lt-10">до 10%</label>
             </li>
-            <li>
+            <li class="unmarked_list-item">
               <input class="filter__radio-checkbox" type="radio" id="filter-checkbox-richness-lt-30"
                 value="richness-lt-30" name="filter__richness-group">
               <label class="filter__text-inside" for="filter-checkbox-richness-lt-30">до 30%</label>
             </li>
-            <li>
+            <li class="unmarked_list-item">
               <input class="filter__radio-checkbox" type="radio" id="filter-checkbox-richness-gt-30"
                 value="richness-gt-30" name="filter__richness-group">
               <label class="filter__text-inside" for="filter-checkbox-richness-gt-30">выше 30%</label>
@@ -136,29 +135,29 @@
       <div class="filter__line-container">
         <fieldset>
           <legend class="filter__text-label">Наполнители:</legend>
-          <ul class="filter__bordered-background">
-            <li>
+          <ul class="unsorted-list filter__bordered-background">
+            <li class="unmarked_list-item">
               <input class="filter__radio-checkbox" type="checkbox" id="filter-checkbox-extender-сhocolate"
                 name="extender-сhocolate">
               <label class="filter__text-inside" for="filter-checkbox-extender-сhocolate">Шоколодные</label>
             </li>
-            <li>
+            <li class="unmarked_list-item">
               <input class="filter__radio-checkbox" type="checkbox" id="filter-checkbox-extender-sugar-sprinkles"
                 name="extender-sugar-sprinkles">
               <label class="filter__text-inside" for="filter-checkbox-extender-sugar-sprinkles">Сахарные
                 присыпки</label>
             </li>
-            <li>
+            <li class="unmarked_list-item">
               <input class="filter__radio-checkbox" type="checkbox" id="filter-checkbox-extender-fruits"
                 name="extender-fruits">
               <label class="filter__text-inside" for="filter-checkbox-extender-fruits">Фрукты</label>
             </li>
-            <li>
+            <li class="unmarked_list-item">
               <input class="filter__radio-checkbox" type="checkbox" id="filter-checkbox-extender-syrup"
                 name="extender-syrup">
               <label class="filter__text-inside" for="filter-checkbox-extender-syrup">Сиропы</label>
             </li>
-            <li>
+            <li class="unmarked_list-item">
               <input class="filter__radio-checkbox" type="checkbox" id="filter-checkbox-extender-jams"
                 name="extender-jams">
               <label class="filter__text-inside" for="filter-checkbox-extender-jams">Джемы</label>
@@ -171,52 +170,52 @@
   </section>
 
   <section class="catalog-container">
-    <ul class="catalog__list">
-      <li><img src="./img/shop-items/item-1-1.png" alt="cream">
+    <ul class="unsorted-list catalog__list">
+      <li class="unmarked_list-item"><img src="./img/shop-items/item-1-1.png" alt="cream">
         <p class="catalog-container__item-price">310 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p><a
           href="" class="catalog-container__item-name link__hovered-color">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
       </li>
-      <li><img src="./img/shop-items/item-1-2.png" alt="cream">
+      <li class="unmarked_list-item"><img src="./img/shop-items/item-1-2.png" alt="cream">
         <p class="catalog-container__item-price">380 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p><a
           href="" class="catalog-container__item-name link__hovered-color">Сливочно-кофейное с кусочками шоколада</a>
       </li>
-      <li><img src="./img/shop-items/item-1-3.png" alt="cream">
+      <li class="unmarked_list-item"><img src="./img/shop-items/item-1-3.png" alt="cream">
         <p class="catalog-container__item-price">355 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p><a
           href="" class="catalog-container__item-name link__hovered-color">Сливочно-клубничное с присыпкой из белого шоколада</a>
       </li>
-      <li><img src="./img/shop-items/item-1-4.png" alt="cream">
+      <li class="unmarked_list-item"><img src="./img/shop-items/item-1-4.png" alt="cream">
         <p class="catalog-container__item-price">325 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p><a
           href="" class="catalog-container__item-name link__hovered-color">Сливочное крем-брюле с карамельной подливкой</a>
       </li>
-      <li><img src="./img/shop-items/item-2-1.png" alt="cream">
+      <li class="unmarked_list-item"><img src="./img/shop-items/item-2-1.png" alt="cream">
         <p class="catalog-container__item-price">410 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p><a
           href="" class="catalog-container__item-name link__hovered-color">Сливочное с брусничным джемом</a>
       </li>
-      <li><img src="./img/shop-items/item-2-2.png" alt="cream">
+      <li class="unmarked_list-item"><img src="./img/shop-items/item-2-2.png" alt="cream">
         <p class="catalog-container__item-price">315 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p><a
           href="" class="catalog-container__item-name link__hovered-color">Сливочно-черничное с цельными ягодами черники</a>
       </li>
-      <li><img src="./img/shop-items/item-2-3.png" alt="cream">
+      <li class="unmarked_list-item"><img src="./img/shop-items/item-2-3.png" alt="cream">
         <p class="catalog-container__item-price">440 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p><a
           href="" class="catalog-container__item-name link__hovered-color">Сливочно-лимонное с карамельной присыпкой</a>
       </li>
-      <li><img src="./img/shop-items/item-2-4.png" alt="cream">
+      <li class="unmarked_list-item"><img src="./img/shop-items/item-2-4.png" alt="cream">
         <p class="catalog-container__item-price">435 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p><a
           href="" class="catalog-container__item-name link__hovered-color">Сливочное с шоколадной стружкой</a>
       </li>
-      <li><img src="./img/shop-items/item-3-1.png" alt="cream">
+      <li class="unmarked_list-item"><img src="./img/shop-items/item-3-1.png" alt="cream">
         <p class="catalog-container__item-price">355 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p><a
           href="" class="catalog-container__item-name link__hovered-color">Сливочно-ванильное с кусочками шоколада</a>
       </li>
-      <li><img src="./img/shop-items/item-3-2.png" alt="cream">
+      <li class="unmarked_list-item"><img src="./img/shop-items/item-3-2.png" alt="cream">
         <p class="catalog-container__item-price">415 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p><a
           href="" class="catalog-container__item-name link__hovered-color">Сливочноe с ментоловым сиропом</a>
       </li>
-      <li><img src="./img/shop-items/item-3-3.png" alt="cream">
+      <li class="unmarked_list-item"><img src="./img/shop-items/item-3-3.png" alt="cream">
         <p class="catalog-container__item-price">320 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p><a
           href="" class="catalog-container__item-name link__hovered-color">Сливочное с кусочками черного шоколада</a>
       </li>
-      <li><img src="./img/shop-items/item-3-4.png" alt="cream">
+      <li class="unmarked_list-item"><img src="./img/shop-items/item-3-4.png" alt="cream">
         <p class="catalog-container__item-price">420 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p><a
           href="" class="catalog-container__item-name link__hovered-color">Сливочное с мятным сиропом</a>
       </li>
@@ -225,7 +224,7 @@
 
   <footer class="footer__container">
     <div class="footer__social-links-container">
-      <ul>
+      <ul class="unsorted-list">
         <li class="unmarked_list-item"><a href="" class="social-icon i-facebook"></a></li>
         <li class="unmarked_list-item"><a href="" class="social-icon i-vk"></a></li>
         <li class="unmarked_list-item"><a href="" class="social-icon i-instagram"></a></li>
@@ -247,7 +246,7 @@
       <div>
         <img src="img/logo-academy.svg" width="108px" height="39px" alt="">
         <p class="footer_link-dev">Сделано в<a
-            class="footer_link-dev link__hovered-color" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy </a> &copy; 2020</p>
+            class="footer_link-dev link__hovered-color" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy </a> &copy; 2020</p>
       </div>
     </div>
   </footer>
