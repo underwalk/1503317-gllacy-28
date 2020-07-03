@@ -380,6 +380,9 @@ color: var(--very-dark-gray);
 .default-padding__container {
   padding-top: 29px;
   padding-left: 20px;
+  padding-right: 16px;
+  padding-bottom: 35px;
+  
 }
 
 .text-content {
