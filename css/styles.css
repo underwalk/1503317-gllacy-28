@@ -60,11 +60,6 @@ fieldset {
   padding: 0;
 }
 
-/* ul {
-  margin: 0;
-  padding-inline-start: 0px;
-} */
-
 .unsorted-list {
   margin: 0;
   padding-inline-start: 0px;
@@ -88,16 +83,6 @@ fieldset {
   background: linear-gradient(0deg, var(--background-gray), var(--background-gray)), 
               linear-gradient(180deg, var(--button-background-gradient-main) 0%, var(--button-background-gradient-second) 100%);
 }
-
-/* a {
-  text-decoration: underline;
-  text-decoration-color: var(--background-gray);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  font-family: Roboto;
-  color: var(--white);
-} */
 
 p {
   margin: 0;
