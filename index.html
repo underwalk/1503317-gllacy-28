@@ -14,7 +14,7 @@
       <img src="./img/logo.svg" height="64" width="154" alt="Logo">
       <nav class="header__main-navigation">
         <ul class="unsorted-list">
-          <li class="unmarked_list-item"><a href="catalog.html" class="main-navigation__menu-item-link">Каталог</a>
+          <li class="unmarked_list-item"><a href="catalog.html" class="link-decoration main-navigation__menu-item-link">Каталог</a>
             <ul class="unsorted-list" hidden>
               <li class="unmarked_list-item"><a href="#" class="main-navigation__menu-item-link ">Новинки</a></li>
               <li class="unmarked_list-item"><a href="#" class="main-navigation__menu-item-link ">Сливочные</a></li>
@@ -23,9 +23,9 @@
               <li class="unmarked_list-item"><a href="#" class="main-navigation__menu-item-link ">Мелорин</a></li>
             </ul>
           </li>
-          <li class="unmarked_list-item link__hovered-color"><a href="#" class="main-navigation__menu-item-link link__hovered-color">Доставка и
+          <li class="unmarked_list-item link__hovered-color"><a href="#" class="link-decoration main-navigation__menu-item-link link__hovered-color">Доставка и
               оплата</a></li>
-          <li class="unmarked_list-item link__hovered-color"><a href="#" class="main-navigation__menu-item-link link__hovered-color">О
+          <li class="unmarked_list-item link__hovered-color"><a href="#" class="link-decoration main-navigation__menu-item-link link__hovered-color">О
               компании</a></li>
         </ul>
       </nav>
@@ -33,31 +33,30 @@
 
     <div class="header__right-container">
       <div class="header__user-navigation">
-
         <a class="header__user-navigation_search" href=""><span class="i-search icon-bg"></span></a>
         <input type="search" placeholder="Крем-брюле" hidden />
-        <a id="login-link" href="" class="header__user-navigation_container-icon header__user-navigation_icon-hover">
+        <a id="login-link" href="" class="link-decoration header__user-navigation_container-icon header__user-navigation_icon-hover header__user-navigation_login">
           <span class="i-login icon-left"></span><span class="header__user-navigation_container-text">Вход</span>
         </a>
         <form action="post" id="login" hidden>
           <input type="email" name="email" placeholder="email@example.com" required />
           <input type="password" name="password" placeholder="********" />
           <input type="submit" name="login" value="Войти">
-          <a href="">Забыли пароль?</a>
-          <a href="">Новая регистрация</a>
+          <a class="link-decoration" href="">Забыли пароль?</a>
+          <a class="link-decoration" href="">Новая регистрация</a>
         </form>
         <!-- <a href="">2 товара</a> -->
-        <a href="" class="header__user-navigation_container-icon"><span class="i-shop icon-left"></span><span class="header__user-navigation_container-text">2 товара</span></a>
+        <a href="" class="header__user-navigation_container-icon decoration-disabled"><span class="i-shop icon-left"></span><span class="header__user-navigation_container-text">2 товара</span></a>
         <div id="shop_popup" class="visually-hidden">
           <table>
             <tr>
-              <td><button class="custom-button" id="shop-item_remove_1"></button></td>
+              <td><button id="shop-item_remove_1"></button></td>
               <td><img src="img/shop-items/item-1-1.png" alt="" height="60" width="60" /></td>
               <td>1.5 кг х 200 руб.</td>
               <td>300 руб.</td>
             </tr>
             <tr>
-              <td><button class="custom-button" id="shop-item_remove_2"></button></td>
+              <td><button id="shop-item_remove_2"></button></td>
               <td><img src="img/shop-items/item-1-3.png" alt="" height="60" width="60" /></td>
               <td>1.5 кг х 300 руб.</td>
               <td>450 руб.</td>
@@ -73,7 +72,7 @@
 
     <div class="header__right-container">
       <p class="header__info_work-time">c 10 до 20, ежедневно</p>
-      <a  href="tel:88124502525" class="header__info_number-text link__hovered-color">8 812 450-25-25</a>
+      <a  href="tel:88124502525" class="link-decoration header__info_number-text link__hovered-color">8 812 450-25-25</a>
     </div>
   </header>
 
@@ -81,17 +80,17 @@
     <ul class="unsorted-list">
       <li class="unmarked_list-item visually-hidden" hidden>
         <img src="./img/slider-1.png" width="716" height="512">
-        <p>Шоколадный пломбир и лимонный сорбет</p>
+        <a class="link-decoration link__hovered-color">Шоколадный пломбир и лимонный сорбет</a>
         <button class="custom-button" title="Давайте оба!">Давайте оба!</button>
       </li>
       <li class="unmarked_list-item visually-hidden" hidden>
         <img src="./img/slider-2.png" width="716" height="512">
-        <p>Пломбир с помадкой и клубничный щербет</p>
+        <a class="link-decoration link__hovered-color">Пломбир с помадкой и клубничный щербет</a>
         <button class="custom-button" title="Давайте оба!">Давайте оба!</button>
       </li>
       <li class="unmarked_list-item">
         <img src="./img/slider-3.png" width="716" height="512">
-        <p>Крем-брюле и пломбир с малиновым джемом</p>
+        <a class="link-decoration link__hovered-color">Крем-брюле и пломбир с малиновым джемом</a>
         <button class="custom-button" title="Давайте оба!">Давайте оба!</button>
       </li>
     </ul>
@@ -122,22 +121,22 @@
     <ul class="unsorted-list catalog-hot__item-list">
       <li class="unmarked_list-item"><span></span>
         <figure class="catalog-hot__item"><img src="./img/shop-items/hits/hit-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          <a href="" class="catalog-container__item-name link__hovered-color">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </figure>
       </li>
       <li class="unmarked_list-item"><span></span>
         <figure class="catalog-hot__item"><img src="./img/shop-items/hits/hit-2.png"  width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-          <a href="" class="catalog-container__item-name link__hovered-color">Сливочно-кофейное с кусочками шоколада</a>
+          <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочно-кофейное с кусочками шоколада</a>
         </figure>
       </li>
       <li class="unmarked_list-item"><span></span>
         <figure class="catalog-hot__item"><img src="./img/shop-items/hits/hit-3.png"  width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-          <a href="" class="catalog-container__item-name link__hovered-color">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </figure>
       </li>
       <li class="unmarked_list-item"><span></span>
         <figure class="catalog-hot__item"><img src="./img/shop-items/hits/hit-4.png"  width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-          <a href="" class="catalog-container__item-name link__hovered-color">Сливочное крем-брюле с карамельной подливкой</a>
+          <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочное крем-брюле с карамельной подливкой</a>
         </figure>
       </li>
     </ul>
@@ -166,7 +165,7 @@
     <article class="news-blog__container grid-row-2">
       <div class="default-padding__container">
         <h2 class="news-blog__text">Новое в нашем блоге</h2>
-        <a href="" class="news-blog__link link__blog-hover">10 способов сервировки<br/>фруктовых щербетов<br/>к столу</a>
+        <a href="" class="link-decoration news-blog__link link__blog-hover">10 способов сервировки<br/>фруктовых щербетов<br/>к столу</a>
       </div>
     </article>
 
@@ -198,18 +197,18 @@
     <div class="footer__about-links-container">
       <div>
         <a href="#" class="i-heart icon-left"></a>
-        <a href="#" class="footer_link link__hovered-color">Для поставщиков</a>
+        <a href="#" class="link-decoration footer_link link__hovered-color">Для поставщиков</a>
       </div>
-      <a class=" footer_link link__hovered-color" href="#" class="footer_link link__hovered-color">О производстве</a>
-      <a href="#" class="footer_link link__hovered-color footer__about-links-container__not-icon">Наши документы</a>
-      <a href="#" class="footer_link link__hovered-color">Экологические</a>
+      <a class="link-decoration footer_link link__hovered-color" href="#" class="footer_link link__hovered-color">О производстве</a>
+      <a href="#" class="link-decoration footer_link link__hovered-color footer__about-links-container__not-icon">Наши документы</a>
+      <a href="#" class="link-decoration footer_link link__hovered-color">Экологические</a>
     </div>
 
     <div class="footer__dev-container">
       <div>
         <img src="img/logo-academy.svg" width="108px" height="39px" alt="">
         <p class="footer_link-dev">Сделано в<a
-            class="footer_link-dev link__hovered-color" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy </a> &copy; 2020</p>
+            class="link-decoration footer_link-dev link__hovered-color" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy </a> &copy; 2020</p>
       </div>
     </div>
   </footer>
