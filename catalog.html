@@ -11,17 +11,19 @@
 <body class="main-background-padua">
   <header class="main-navigation__container">
     <div class="header__left-container">
-      <img src="./img/logo.svg" height="64" width="154" alt="Logo">
+      <img src="./img/logo.svg" height="64" width="154" alt="Logo"> 
       <nav class="header__main-navigation">
-        <ul class="unsorted-list">
-          <li class="unmarked_list-item"><a href="catalog.html" class="main-navigation__menu-item-link main-navigation__menu-item-link_current-page">Каталог</a>
-            <ul class="unsorted-list" hidden>
-              <li class="unmarked_list-item"><a href="#" class="main-navigation__menu-item-link">Новинки</a></li>
-              <li class="unmarked_list-item"><a href="#" class="main-navigation__menu-item-link">Сливочные</a></li>
-              <li class="unmarked_list-item"><a href="#" class="main-navigation__menu-item-link">Щербеты</a></li>
-              <li class="unmarked_list-item"><a href="#" class="main-navigation__menu-item-link">Фруктовый лед</a></li>
-              <li class="unmarked_list-item"><a href="#" class="main-navigation__menu-item-link">Мелорин</a></li>
-            </ul>
+        <ul class="unsorted-list main-navigation">
+            <li class="dropdown">
+              <a href="catalog.html" class="main-navigation__menu-item-link menu-item-link__dropdown main-navigation__menu-item-link main-navigation__menu-item-link_current-page">Каталог</a>
+              <div class="dropdown-content">
+                  <a class="dropdown__submenu-item main-navigation__submenu-item main-navigation__submenu-item_new" href="#">Новинки</a>
+                  <a class="dropdown__submenu-item main-navigation__submenu-item" href="#">Сливочные</a>
+                  <a class="dropdown__submenu-item main-navigation__submenu-item" href="#">Щербеты</a>
+                  <a class="dropdown__submenu-item main-navigation__submenu-item" href="#">Фруктовый лед</a>
+                  <a class="dropdown__submenu-item main-navigation__submenu-item" href="#">Мелорин</a>
+              </div>
+            </li>
           </li>
           <li class="unmarked_list-item"><a href="#" class="link-decoration main-navigation__menu-item-link link__hovered-color">Доставка и
               оплата</a></li>
@@ -33,41 +35,57 @@
 
     <div class="header__right-container">
       <div class="header__user-navigation">
-        <a class="header__user-navigation_search" href=""><span class="i-search icon-bg"></span></a>
+        <a class="header__user-navigation_search" href="">
+          <span class="i-search icon-bg"></span>
+          <div class="header__user-navigation_search_form">
+            <input class="search-form_input" type="text" placeholder="Крем-брюле">
+          </div>
+        </a>
         <input type="search" placeholder="Крем-брюле" hidden />
-        <a id="login-link" href="" class="link-decoration header__user-navigation_container-icon header__user-navigation_icon-hover header__user-navigation_login">
-          <span class="i-login icon-left"></span><span class="header__user-navigation_container-text">Вход</span>
-        </a>
-        <form action="post" id="login" hidden>
-          <input type="email" name="email" placeholder="email@example.com" required />
-          <input type="password" name="password" placeholder="********" />
-          <input type="submit" name="login" value="Войти">
-          <a class="link-decoration" href="">Забыли пароль?</a>
-          <a class="link-decoration" href="">Новая регистрация</a>
-        </form>
-        <!-- <a href="">2 товара</a> -->
-        <a href="" class="header__user-navigation_container-icon decoration-disabled pannier__with-items">
-          <span class="i-shop-red icon-left"></span>
-          <span class="header__user-navigation_container-text">2 товара</span>
-        </a>
+        <div class="header__user-navigation_login-container">
+          <a id="login-link" href="" class="link-decoration header__user-navigation_container-icon header__user-navigation_icon-hover header__user-navigation_login">
+            <span class="i-login icon-left"></span><span class="header__user-navigation_container-text">Вход</span>
+          </a>
+          <form action="post" class="header__user-navigation_login-form">
+            <input class="custom-input header__user-navigation_login-form_input" type="text" placeholder="email@example.com">
+            <input class="custom-input header__user-navigation_login-form_input" type="text" placeholder="&centerdot;&centerdot;&centerdot;&centerdot;&centerdot;">
+              <div class="login-form__down-container">
+                <button class="custom-button login-form_btn-submit" name="Войти">Войти</button>
+                <div class="login-form__links-container">
+                  <a class="link-decoration link__hovered-color login-form__links" href="">Забыли пароль?</a>
+                  <a class="link-decoration link__hovered-color login-form__links" href="">Новая регистрация</a>
+                </div>
+            </div>
+          </form>
+        </div>
 
-        <div id="shop_popup" class="visually-hidden">
-          <table>
-            <tr>
-              <td><button id="shop-item_remove_1"></button></td>
-              <td><img src="img/shop-items/item-1-1.png" alt="" height="60" width="60" /></td>
-              <td>1.5 кг х 200 руб.</td>
-              <td>300 руб.</td>
-            </tr>
-            <tr>
-              <td><button id="shop-item_remove_2"></button></td>
-              <td><img src="img/shop-items/item-1-3.png" alt="" height="60" width="60" /></td>
-              <td>1.5 кг х 300 руб.</td>
-              <td>450 руб.</td>
-            </tr>
-          </table>
-          Итого: 750 руб.
-          <a href="">Оформить заказ</a>
+        <div class="header__user-navigation_shopping-basket">
+          <a href="" class="header__user-navigation_container-icon decoration-disabled"><span
+              class="i-shop icon-left"></span><span class="header__user-navigation_container-text">2 товара</span></a>
+          <form id="shop_popup" class="shopping-basket__form">
+            <div class="shopping-basket__form-container">
+              <table class="">
+                <tr class="shopping-basket__items-container">
+                  <td><button id="shop-item_remove_1" class="i-cross shopping-basket__btn-remove"></button></td>
+                  <td><img src="img/shop-items/item-1-1.png" alt="" height="60" width="60" /></td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1.5 кг х <span class="shopping-basket__item-price">200 руб.</span></td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr class="shopping-basket__items-container">
+                  <td><button id="shop-item_remove_2" class="i-cross shopping-basket__btn-remove"></button></td>
+                  <td><img src="img/shop-items/item-1-3.png" alt="" height="60" width="60" /></td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1.5 кг х <span class="shopping-basket__item-price">300 руб.</span></td>
+                  <td>450 руб.</td>
+                </tr>
+              </table>
+              <div class="shopping-basket__footer">
+                <span class="shopping-basket__footer_total">Итого: 750 руб.</span>
+                <button class="custom-button shopping-basket__btn-chekout">Оформить заказ</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
