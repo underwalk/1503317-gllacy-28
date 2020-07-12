@@ -14,7 +14,7 @@
     <div class="header__left-container">
       <img class="header__logo" src="./img/logo.svg" height="64" width="154" alt="Logo">
       <nav class="header__main-navigation">
-        <ul class="unsorted-list main-navigation">
+        <ul class="list__unstyled main-navigation">
           <li class="dropdown">
             <a href="catalog.html"
               class="main-navigation__menu-item-link menu-item-link__dropdown main-navigation__menu-item-link_current-page">Каталог</a>
@@ -27,11 +27,10 @@
               <a class="dropdown__submenu-item main-navigation__submenu-item" href="#">Мелорин</a>
             </div>
           </li>
-          </li>
-          <li class="unmarked_list-item"><a href="#"
+          <li class="list__horizonatal-item"><a href="#"
               class="link-decoration main-navigation__menu-item-link link__hovered-color">Доставка и
               оплата</a></li>
-          <li class="unmarked_list-item"><a href="#"
+          <li class="list__horizonatal-item"><a href="#"
               class="link-decoration main-navigation__menu-item-link link__hovered-color">О
               компании</a></li>
         </ul>
@@ -135,7 +134,7 @@
         <div class="filter__line-container filter__upper-container">
           <fieldset class="filter__item-container">
             <legend class="filter__text-label">Сортировка:</legend>
-            <select id="filter-sort" list="filter-list-sort" name="sort" value="по популярности"
+            <select id="filter-sort" name="sort"
               class="filter__text-inside filter__input-sort">
               <option class="filter__option_text-inside" value="по популярности">по популярности</option>
               <option class="filter__option_text-inside" value="сначала не дорогие">сначала не дорогие</option>
@@ -147,32 +146,32 @@
           <fieldset class="filter__item-container">
             <legend class="filter__text-label filter__text-label_price">Цена: 100 &#8381; - 500 &#8381;</legend>
               <div class="filter__doubled_slider-container">
-                <input class="filter__price-range filter__bordered-background" type="range" id="filter-range-price"
+                <input class="filter__price-range filter__bordered-background" type="range" id="filter-range-price-1"
                   name="price" min="100" max="500" value="150">
-                <input class="filter__price-range filter__price-range_second filter__bordered-background" type="range" id="filter-range-price"
+                <input class="filter__price-range filter__price-range_second filter__bordered-background" type="range" id="filter-range-price-2"
                   name="price" min="100" max="500" value="420">
               </div>
           </fieldset>
 
           <fieldset class="filter__item-container">
-            <legend class="filter__text-label">Жирность:</legend>
-            <ul class="unsorted-list filter__bordered-background filter__sort-container">
-              <li class="unmarked_list-item">
+            <legend class="filter__text-label filter__text-label_richness">Жирность:</legend>
+            <ul class="list__unstyled filter__bordered-background filter__sort-container">
+              <li class="list__horizonatal-item">
                 <input class="filter__radio-checkbox" type="radio" id="filter-checkbox-richness-lt-0" value="richness-0"
                   name="filter__richness-group">
                 <label class="filter__text-inside" for="filter-checkbox-richness-lt-0">0%</label>
               </li>
-              <li class="unmarked_list-item">
+              <li class="list__horizonatal-item">
                 <input class="filter__radio-checkbox" type="radio" id="filter-checkbox-richness-lt-10"
                   value="richness-lt-10" name="filter__richness-group">
                 <label class="filter__text-inside" for="filter-checkbox-richness-lt-10">до 10%</label>
               </li>
-              <li class="unmarked_list-item">
+              <li class="list__horizonatal-item">
                 <input class="filter__radio-checkbox" type="radio" id="filter-checkbox-richness-lt-30"
                   value="richness-lt-30" name="filter__richness-group">
                 <label class="filter__text-inside" for="filter-checkbox-richness-lt-30">до 30%</label>
               </li>
-              <li class="unmarked_list-item">
+              <li class="list__horizonatal-item">
                 <input class="filter__radio-checkbox" type="radio" id="filter-checkbox-richness-gt-30"
                   value="richness-gt-30" name="filter__richness-group">
                 <label class="filter__text-inside" for="filter-checkbox-richness-gt-30">выше 30%</label>
@@ -184,29 +183,29 @@
         <div class="filter__line-container filter__extender-container">
           <fieldset class="filter__item-container">
             <legend class="filter__text-label">Наполнители:</legend>
-            <ul class="unsorted-list filter__bordered-background filter__list">
-              <li class="unmarked_list-item">
+            <ul class="list__unstyled filter__bordered-background filter__list">
+              <li class="list__horizonatal-item">
                 <input class="filter__radio-checkbox" type="checkbox" id="filter-checkbox-extender-сhocolate"
                   name="extender-сhocolate">
                 <label class="filter__text-inside" for="filter-checkbox-extender-сhocolate">шоколодные</label>
               </li>
-              <li class="unmarked_list-item">
+              <li class="list__horizonatal-item">
                 <input class="filter__radio-checkbox" type="checkbox" id="filter-checkbox-extender-sugar-sprinkles"
                   name="extender-sugar-sprinkles">
                 <label class="filter__text-inside" for="filter-checkbox-extender-sugar-sprinkles">сахарные
                   присыпки</label>
               </li>
-              <li class="unmarked_list-item">
+              <li class="list__horizonatal-item">
                 <input class="filter__radio-checkbox" type="checkbox" id="filter-checkbox-extender-fruits"
                   name="extender-fruits">
                 <label class="filter__text-inside" for="filter-checkbox-extender-fruits">фрукты</label>
               </li>
-              <li class="unmarked_list-item">
+              <li class="list__horizonatal-item">
                 <input class="filter__radio-checkbox" type="checkbox" id="filter-checkbox-extender-syrup"
                   name="extender-syrup">
                 <label class="filter__text-inside" for="filter-checkbox-extender-syrup">сиропы</label>
               </li>
-              <li class="unmarked_list-item">
+              <li class="list__horizonatal-item">
                 <input class="filter__radio-checkbox" type="checkbox" id="filter-checkbox-extender-jams"
                   name="extender-jams">
                 <label class="filter__text-inside" for="filter-checkbox-extender-jams">джемы</label>
@@ -220,8 +219,8 @@
 
     <section class="catalog-container">
       <ul class="unsorted-list catalog__list">
-        <li class="unmarked_list-item catalog-container__item">
-          <button class="custom-button catalog-container__btn-show">Быстрый просмотр</button>
+        <li class="list__horizonatal-item catalog-container__item">
+          <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
             <img src="./img/shop-items/item-1-1.png" alt="cream">
             <p class="catalog-container__item-price">310 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
@@ -230,8 +229,8 @@
             джемом и цитрусовой стружкой</a>
           
         </li>
-        <li class="unmarked_list-item catalog-container__item">
-          <button class="custom-button catalog-container__btn-show">Быстрый просмотр</button>
+        <li class="list__horizonatal-item catalog-container__item">
+          <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
             <img src="./img/shop-items/item-1-2.png" alt="cream">
             <p class="catalog-container__item-price">380 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
@@ -239,8 +238,8 @@
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочно-кофейное с
             кусочками шоколада</a>
         </li>
-        <li class="unmarked_list-item catalog-container__item">
-          <button class="custom-button catalog-container__btn-show">Быстрый просмотр</button>
+        <li class="list__horizonatal-item catalog-container__item">
+          <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
             <img src="./img/shop-items/item-1-3.png" alt="cream">
             <p class="catalog-container__item-price">355 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
@@ -248,8 +247,8 @@
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочно-клубничное
             с<br>присыпкой из белого шоколада</a>
         </li>
-        <li class="unmarked_list-item catalog-container__item">
-          <button class="custom-button catalog-container__btn-show">Быстрый просмотр</button>
+        <li class="list__horizonatal-item catalog-container__item">
+          <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
             <img src="./img/shop-items/item-1-4.png" alt="cream">
             <p class="catalog-container__item-price">415 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
@@ -257,8 +256,8 @@
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочное крем-брюле<br>с
             карамельной подливкой</a>
         </li>
-        <li class="unmarked_list-item catalog-container__item">
-          <button class="custom-button catalog-container__btn-show">Быстрый просмотр</button>
+        <li class="list__horizonatal-item catalog-container__item">
+          <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
             <img src="./img/shop-items/item-2-1.png" alt="cream">
             <p class="catalog-container__item-price">325 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
@@ -266,8 +265,8 @@
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочное с
             брусничным<br>джемом</a>
         </li>
-        <li class="unmarked_list-item catalog-container__item">
-          <button class="custom-button catalog-container__btn-show">Быстрый просмотр</button>
+        <li class="list__horizonatal-item catalog-container__item">
+          <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
             <img src="./img/shop-items/item-2-2.png" alt="cream">
             <p class="catalog-container__item-price">410 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
@@ -275,8 +274,8 @@
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочно-черничное с
             цельными ягодами черники</a>
         </li>
-        <li class="unmarked_list-item catalog-container__item">
-          <button class="custom-button catalog-container__btn-show">Быстрый просмотр</button>
+        <li class="list__horizonatal-item catalog-container__item">
+          <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
             <img src="./img/shop-items/item-2-3.png" alt="cream">
             <p class="catalog-container__item-price">315 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
@@ -284,8 +283,8 @@
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочно-лимонное
             с<br>карамельной присыпкой</a>
         </li>
-        <li class="unmarked_list-item catalog-container__item">
-          <button class="custom-button catalog-container__btn-show">Быстрый просмотр</button>
+        <li class="list__horizonatal-item catalog-container__item">
+          <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
             <img src="./img/shop-items/item-2-4.png" alt="cream">
             <p class="catalog-container__item-price">320 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
@@ -293,8 +292,8 @@
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочное с
             шоколадной<br>стружкой</a>
         </li>
-        <li class="unmarked_list-item catalog-container__item">
-          <button class="custom-button catalog-container__btn-show">Быстрый просмотр</button>
+        <li class="list__horizonatal-item catalog-container__item">
+          <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
             <img src="./img/shop-items/item-3-1.png" alt="cream">
             <p class="catalog-container__item-price">440 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
@@ -302,8 +301,8 @@
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочно-ванильное<br>с
             кусочками шоколада</a>
         </li>
-        <li class="unmarked_list-item catalog-container__item">
-          <button class="custom-button catalog-container__btn-show">Быстрый просмотр</button>
+        <li class="list__horizonatal-item catalog-container__item">
+          <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
             <img src="./img/shop-items/item-3-2.png" alt="cream">
             <p class="catalog-container__item-price">435 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
@@ -311,8 +310,8 @@
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочноe с
             ментоловым<br>сиропом</a>
         </li>
-        <li class="unmarked_list-item catalog-container__item">
-          <button class="custom-button catalog-container__btn-show">Быстрый просмотр</button>
+        <li class="list__horizonatal-item catalog-container__item">
+          <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
             <img src="./img/shop-items/item-3-3.png" alt="cream">
             <p class="catalog-container__item-price">355 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
@@ -320,8 +319,8 @@
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочное с кусочками
             черного шоколада</a>
         </li>
-        <li class="unmarked_list-item catalog-container__item">
-          <button class="custom-button catalog-container__btn-show">Быстрый просмотр</button>
+        <li class="list__horizonatal-item catalog-container__item">
+          <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
             <img src="./img/shop-items/item-3-4.png" alt="cream">
             <p class="catalog-container__item-price">420 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
@@ -350,10 +349,10 @@
   <footer class="footer__container">
     <div class="footer__container-left">
       <ul class="footer__social-links-container">
-        <li class="unmarked_list-item"><a href="" class="social-icon i-facebook"></a></li>
-        <li class="unmarked_list-item"><a href="" class="social-icon i-vk"></a></li>
-        <li class="unmarked_list-item"><a href="" class="social-icon i-instagram"></a></li>
-        <li class="unmarked_list-item"><a href="" class="social-icon i-twitter"></a></li>
+        <li class="list__horizonatal-item"><a href="" class="social-icon i-facebook"></a></li>
+        <li class="list__horizonatal-item"><a href="" class="social-icon i-vk"></a></li>
+        <li class="list__horizonatal-item"><a href="" class="social-icon i-instagram"></a></li>
+        <li class="list__horizonatal-item"><a href="" class="social-icon i-twitter"></a></li>
       </ul>
     </div>
 
@@ -365,15 +364,15 @@
       </div>
       <a href="#" class="link-decoration footer_link link__hovered-color">Наши
         документы</a>
-      <a class="link-decoration footer_link link__hovered-color" href="#" class="footer_link link__hovered-color">О
+      <a class="link-decoration footer_link link__hovered-color" href="#">О
         производстве</a>
       <a href="#" class="link-decoration footer_link link__hovered-color">Экологические стандарты</a>
     </div>
 
     <div class="footer__dev-container">
       <div class="footer_link-content">
-        <img class="footer__dev-img" src="img/logo-academy.svg" width="108px" height="39px" alt="">
-        <p class="footer_text-dev">Сделано в<a class="footer_link-dev" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="footer__dev-img" src="img/logo-academy.svg" width="108" height="39" alt="">
+        <p class="footer_text-dev">Сделано в<a class="footer_link-dev link__hovered-color" href="https://htmlacademy.ru/intensive/htmlcss">
             HTML Academy </a> &copy; 2020</p>
       </div>
     </div>
