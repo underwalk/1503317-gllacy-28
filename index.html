@@ -7,12 +7,13 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin,cyrillic">
+  <script src="js/scripts.js"></script>
 </head>
 
 <body class="main-background-padua">
   <header class="main-navigation__container">
     <div class="header__left-container">
-      <img class="header__logo" src="./img/logo.svg" height="64" width="154" alt="Logo">
+      <a href="index.html"><img class="header__logo" src="./img/logo.svg" height="64" width="154" alt="Logo"></a>
       <nav class="header__main-navigation">
         <ul class="list__unstyled main-navigation">
           <li class="dropdown">
@@ -260,7 +261,7 @@
             Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <div class="mailing-subscribe__input-container">
             <input class="custom-input mailing-subscribe__input" type="text" placeholder="email@example.com">
-            <button class="custom-button mailing-subscribe__button">Отправить</button>
+            <button class="custom-button mailing-subscribe__button" onclick="showFeedbackModal()">Отправить</button>
           </div>
         </div>
       </article>
@@ -320,7 +321,7 @@
     <div class="feedback__form-content">
       <div class="feedback__form-content_header">
         <h2 class="feedback__form-title">Мы обязательно вам ответим!</h2>
-        <button class="i-cross feedback__close-btn" id="feedback_close"></button>
+        <button class="i-cross feedback__close-btn" id="feedback_close" type="button" onclick="hideFeedbackForm()"></button>
       </div>
 
       <input class="custom-input feedback__form_input-template feedback__form_input" type="text"
