@@ -16,7 +16,7 @@
       <img class="header__logo" src="./img/logo.svg" height="64" width="154" alt="Logo">
       <nav class="header__main-navigation">
         <ul class="list__unstyled main-navigation">
-          <li class="dropdown">
+          <li class="dropdown dropdown__helper dropdown__helper-catalog">
             <a href="catalog.html" class="main-navigation__menu-item-link menu-item-link__dropdown">Каталог</a>
             <div class="dropdown-content">
               <a class="dropdown__submenu-item main-navigation__submenu-item main-navigation__submenu-item_new"
@@ -40,7 +40,7 @@
     <div class="header__right-container">
       <div class="header__user-navigation_upper-right">
         <div class="header__user-navigation_search-container">
-          <a class="header__user-navigation_search" href="">
+          <a class="header__user-navigation_search dropdown__helper dropdown__helper-search" href="">
             <span class="i-search icon-bg"></span>
           </a>
           <div class="header__user-navigation_search_form">
@@ -51,7 +51,7 @@
 
         <div class="header__user-navigation_login-container">
           <a id="login-link" href=""
-            class="link-decoration header__user-navigation_container-icon header__user-navigation_icon-hover header__user-navigation_login">
+            class="link-decoration header__user-navigation_container-icon header__user-navigation_icon-hover header__user-navigation_login dropdown__helper dropdown__helper-login">
             <span class="i-login icon-left"></span><span class="header__user-navigation_container-text">Вход</span>
           </a>
           <form action="post" class="header__user-navigation_login-form">

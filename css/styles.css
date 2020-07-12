@@ -622,6 +622,30 @@ fieldset {
   display: grid;
 }
 
+.dropdown__helper::after{
+  bottom: 0px;
+  height: 10px;
+  background: transparent;
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.dropdown__helper-login::after {
+  bottom: -8px;
+  width:80px;
+}
+
+.dropdown__helper-catalog::after {
+  width:100px;
+  bottom: -13px;
+}
+
+.dropdown__helper-search::after {
+  width:30px;
+  bottom: -38px;
+}
+
 .header__user-navigation_login-form_input {
   font-style: normal;
   font-weight: normal;
@@ -863,6 +887,7 @@ fieldset {
   background-position: center;
   background-size: 32px 32px;
   background-repeat: no-repeat;
+  background-color: red;
   border-radius: 50%;
   padding: 22px;
 }
