@@ -44,6 +44,7 @@ body {
   grid-template-rows: 229px 324px 306px 220px;
   gap: 40px 1px;
   padding: 10px 27px 0 27px;
+  z-index: 99999;
 }
 
 .main-background-padua {
@@ -698,6 +699,7 @@ fieldset {
   grid-template-columns: 1fr 1fr;
   padding-top: 5px;
   grid-column-gap: 26px;
+  z-index: 1;
 }
 
 .promo__block_content {
@@ -726,6 +728,7 @@ fieldset {
   margin-top: 42px;
   padding: 14px 20px;
 }
+
 
 .promo__button-text {
   padding: 0 27px;
