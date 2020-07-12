@@ -27,6 +27,7 @@
   --shopping-basket-border: #cacac7;
   --catalog-item-hover-bg: rgba(0, 0, 0, 0.2);
   --slider-track: rgba(248, 247, 244, 0.5);
+  --form-feedback-background: #fefefe;
 }
 
 body {
@@ -206,7 +207,7 @@ fieldset {
   line-height: 16px;
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .catalog__navigation .catalog__navigation_item:not(:first-child) {
@@ -602,7 +603,7 @@ fieldset {
 }
 
 .shopping-basket__item-price {
-  color: #cacac7;
+  color: var(--shopping-basket-border);
 }
 
 .shopping-basket__form-container {
@@ -1021,7 +1022,7 @@ fieldset {
   margin-right: 27px;
   width: 303px;
   height: 306px;
-  background: #fefefe;
+  background: var(--form-feedback-background);
   border-radius: 16px;
 }
 
@@ -1062,7 +1063,7 @@ fieldset {
   width: 430px;
   height: 441px;
   padding: 0 20px;
-  background: #f8f7f4;
+  background: var(--floral-white);
   border-radius: 6px;
 }
 
