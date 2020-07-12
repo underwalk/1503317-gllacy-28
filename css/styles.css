@@ -89,16 +89,9 @@ fieldset {
 }
 
 .custom-button:hover {
-  background: linear-gradient(
-      0deg,
-      var(--background-gray),
-      var(--background-gray)
-    ),
-    linear-gradient(
-      180deg,
-      var(--button-background-gradient-main) 0%,
-      var(--button-background-gradient-second) 100%
-    );
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  box-shadow: 0 2px 2px var(--button-box-shadow-color);
+  border-radius: 70px;
 }
 
 .link-decoration {
