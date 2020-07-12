@@ -89,9 +89,16 @@ fieldset {
 }
 
 .custom-button:hover {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-  box-shadow: 0 2px 2px var(--button-box-shadow-color);
-  border-radius: 70px;
+  background: linear-gradient(
+      0deg,
+      var(--background-gray),
+      var(--background-gray)
+    ),
+    linear-gradient(
+      180deg,
+      var(--button-background-gradient-main) 0%,
+      var(--button-background-gradient-second) 100%
+    );
 }
 
 .link-decoration {
@@ -408,7 +415,7 @@ fieldset {
   background: var(--floral-white);
   box-shadow: 0 20px 20px var(--form-box-shadow);
   border-radius: 4px;
-  z-index: 9999;
+  z-index: -1;
 }
 
 .login-form__links-container {
