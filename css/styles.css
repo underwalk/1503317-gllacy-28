@@ -71,10 +71,6 @@ body {
   color: var(--ford-dark-charcoal);
 }
 
-fieldset {
-  border: 0;
-}
-
 .custom-button {
   padding: 0;
   margin: 0;
@@ -1512,6 +1508,7 @@ fieldset {
 }
 
 .filter__item-container {
+  border: 0;
   margin-left: 20px;
   padding: 0 0 0 10px;
 }
