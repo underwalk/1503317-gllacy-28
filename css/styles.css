@@ -498,8 +498,6 @@ fieldset {
   position: relative;
 }
 
-/* .header__user-navigation_shopping-basket:hover>.shopping-basket__form { */
-
 .header__user-navigation_shopping-basket:hover > .shopping-basket__form {
   display: flex;
 }
@@ -511,7 +509,6 @@ fieldset {
   align-items: center;
   position: absolute;
   background-color: var(--snow);
-  /* width: 539px; */
   z-index: 1;
   top: 40px;
   right: 0px;
