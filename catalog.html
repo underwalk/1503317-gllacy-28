@@ -12,7 +12,9 @@
 <body class="main-background-padua">
   <header class="main-navigation__container">
     <div class="header__left-container">
-    <img class="header__logo" src="./img/logo.svg" height="64" width="154" alt="Logo">
+      <a class="header__logo" href="index.html">
+        <img class="" src="./img/logo.svg" height="64" width="154" alt="Logo">
+      </a>
       <nav class="header__main-navigation">
         <ul class="list__unstyled main-navigation">
           <li class="dropdown dropdown__helper dropdown__helper-catalog">
@@ -21,7 +23,7 @@
             <div class="dropdown-content">
               <a class="dropdown__submenu-item main-navigation__submenu-item main-navigation__submenu-item_new"
                 href="#">Новинки</a>
-              <a class="dropdown__submenu-item main-navigation__submenu-item" href="#">Сливочные</a>
+              <a class="dropdown__submenu-item main-navigation__submenu-item main-navigation__submenu-current" href="catalog.html">Сливочные</a>
               <a class="dropdown__submenu-item main-navigation__submenu-item" href="#">Щербеты</a>
               <a class="dropdown__submenu-item main-navigation__submenu-item" href="#">Фруктовый лед</a>
               <a class="dropdown__submenu-item main-navigation__submenu-item" href="#">Мелорин</a>
@@ -43,10 +45,11 @@
           <a class="header__user-navigation_search dropdown-form__helper dropdown__helper dropdown__helper-search" href="">
             <span class="i-search icon-bg"></span>
           </a>
-          <div class="header__user-navigation_search_form">
-            <input class="search-form_input" type="text" placeholder="Крем-брюле">
-          </div>
-          <input type="search" placeholder="Крем-брюле" hidden />
+          <form class="header__user-navigation_search_form" method="GET" action="https://echo.htmlacademy.ru">
+            <label for="search-input">
+              <input id="search-input" class="search-form_input" type="text" placeholder="Крем-брюле">
+            </label>
+          </form>
         </div>
 
         <div class="header__user-navigation_login-container">
@@ -54,11 +57,15 @@
             class="link-decoration header__user-navigation_container-icon header__user-navigation_icon-hover header__user-navigation_login dropdown__helper dropdown__helper-login">
             <span class="i-login icon-left"></span><span class="header__user-navigation_container-text">Вход</span>
           </a>
-          <form action="post" class="header__user-navigation_login-form">
-            <input class="custom-input header__user-navigation_login-form_input" type="text"
+          <form action="post" action="https://echo.htmlacademy.ru" class="header__user-navigation_login-form">
+            <label for="login-form_input-email">
+              <input id="login-form_input-email" class="custom-input header__user-navigation_login-form_input" type="text"
               placeholder="email@example.com">
-            <input class="custom-input header__user-navigation_login-form_input" type="text"
+            </label>
+            <label for="login-form_input-password">
+              <input id="login-form_input-password" class="custom-input header__user-navigation_login-form_input" type="password"
               placeholder="&centerdot;&centerdot;&centerdot;&centerdot;&centerdot;">
+            </label>
             <div class="login-form__down-container">
               <button class="custom-button login-form_btn-submit" name="Войти">Войти</button>
               <div class="login-form__links-container">
@@ -74,15 +81,15 @@
             class="header__user-navigation_container-icon decoration-disabled header__user-navigation_shopping-basket_not-empty dropdown-form__helper dropdown__helper dropdown__helper-login"><span
               class="i-shop-red icon-left"></span><span class="header__user-navigation_container-text">2
               товара</span></a>
-              <form id="shop_popup" class="shopping-basket__form">
+              <form id="shop_popup" class="shopping-basket__form" method="GET" action="https://echo.htmlacademy.ru">
                 <div class="shopping-basket__list-container">
                   <ul class="shopping-basket__list-style ">
                     <li class="shopping-basket__items-container">
                       <ul class="shopping-basket__list-style shopping-basket__row-container">
                         <li class="shopping-basket__item"><button id="shop-item_remove_1"
-                            class="i-cross shopping-basket__btn-remove"></button></li>
+                            class="i-remove shopping-basket__btn-remove"></button></li>
                         <li class="shopping-basket__item shopping-basket__item_image"><img src="img/shop-items/item-1-1.png"
-                            alt="" height="33" width="33" /></li>
+                            alt="Пломбир с апельсиновым джемом" height="33" width="33" /></li>
                         <li class="shopping-basket__item shopping-basket__item_name">Пломбир с апельсиновым джемом</li>
                         <li class="shopping-basket__item shopping-basket__item_price">1.5 кг х <span
                             class="shopping-basket__item-price">200 руб.</span></li>
@@ -92,9 +99,9 @@
                     <li class="shopping-basket__items-container">
                       <ul class="shopping-basket__list-style shopping-basket__row-container">
                         <li class="shopping-basket__item"><button id="shop-item_remove_2"
-                            class="i-cross shopping-basket__btn-remove"></button></li>
+                            class="i-remove shopping-basket__btn-remove"></button></li>
                         <li class="shopping-basket__item shopping-basket__item_image"><img src="img/shop-items/item-1-3.png"
-                            alt="" height="33" width="33" /></li>
+                            alt="Клубничный пломбир с присыпкой из белого шоколада" height="33" width="33" /></li>
                         <li class="shopping-basket__item shopping-basket__item_name">Клубничный пломбир с присыпкой из
                           белого шоколада</li>
                         <li class="shopping-basket__item shopping-basket__item_price">1.5 кг х <span
@@ -115,7 +122,7 @@
     <div class="catalog__navigation">
       <a class="catalog__navigation_item link-decoration link__hovered-color" href="index.html">Главная </a>
       <span class="catalog__navigation_item raquo"> &raquo; </span>
-      <a class="catalog__navigation_item link-decoration link__hovered-color" href="catalog.html">Каталог </a>
+      <a class="catalog__navigation_item link-decoration link__hovered-color" href="">Каталог </a>
       <span class="catalog__navigation_item raquo"> &raquo; </span>
       <a class="catalog__navigation_item link-decoration_inactive">Сливочное</a>
     </div>
@@ -134,22 +141,28 @@
         <div class="filter__line-container filter__upper-container">
           <fieldset class="filter__item-container">
             <legend class="filter__text-label">Сортировка:</legend>
-            <select id="filter-sort" name="sort"
-              class="filter__text-inside filter__input-sort">
-              <option class="filter__option_text-inside" value="по популярности">по популярности</option>
-              <option class="filter__option_text-inside" value="сначала не дорогие">сначала не дорогие</option>
-              <option class="filter__option_text-inside" value="сначала дорогие">сначала дорогие</option>
-              <option class="filter__option_text-inside" value="по жирности">по жирности</option>
-            </select>
+            <label for="filter-sort">
+              <select id="filter-sort" name="sort"
+                class="filter__text-inside filter__input-sort">
+                <option class="filter__option_text-inside" value="по популярности">по популярности</option>
+                <option class="filter__option_text-inside" value="сначала не дорогие">сначала не дорогие</option>
+                <option class="filter__option_text-inside" value="сначала дорогие">сначала дорогие</option>
+                <option class="filter__option_text-inside" value="по жирности">по жирности</option>
+              </select>
+            </label>
           </fieldset>
 
           <fieldset class="filter__item-container">
             <legend class="filter__text-label filter__text-label_price">Цена: 100 &#8381; - 500 &#8381;</legend>
               <div class="filter__doubled_slider-container">
-                <input class="filter__price-range filter__bordered-background" type="range" id="filter-range-price-1"
+                <label for="filter__price-range">
+                  <input id="filter__price-range" class="filter__price-range filter__bordered-background" type="range" id="filter-range-price-1"
                   name="price" min="100" max="500" value="150">
-                <input class="filter__price-range filter__price-range_second filter__bordered-background slider__thumb slider__track" type="range" id="filter-range-price-2"
+                </label>
+                <label for="filter__price-range_second">
+                  <input id="filter__price-range_second" class="filter__price-range filter__price-range_second filter__bordered-background slider__thumb slider__track" type="range" id="filter-range-price-2"
                   name="price" min="100" max="500" value="420">
+                </label>
               </div>
           </fieldset>
 
@@ -222,7 +235,7 @@
         <li class="list__horizonatal-item catalog-container__item">
           <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
-            <img src="./img/shop-items/item-1-4.png" alt="cream">
+            <img src="./img/shop-items/item-1-4.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
             <p class="catalog-container__item-price">310 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
           </div>
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочное с апельсиновым
@@ -232,7 +245,7 @@
         <li class="list__horizonatal-item catalog-container__item">
           <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
-            <img src="./img/shop-items/item-1-3.png" alt="cream">
+            <img src="./img/shop-items/item-1-3.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада" >
             <p class="catalog-container__item-price">380 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
           </div>
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочно-кофейное с
@@ -241,7 +254,7 @@
         <li class="list__horizonatal-item catalog-container__item">
           <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
-            <img src="./img/shop-items/item-1-2.png" alt="cream">
+            <img src="./img/shop-items/item-1-2.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <p class="catalog-container__item-price">355 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
           </div>
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочно-клубничное
@@ -250,7 +263,7 @@
         <li class="list__horizonatal-item catalog-container__item">
           <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
-            <img src="./img/shop-items/item-1-1.png" alt="cream">
+            <img src="./img/shop-items/item-1-1.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             <p class="catalog-container__item-price">415 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
           </div>
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочное крем-брюле<br>с
@@ -259,7 +272,7 @@
         <li class="list__horizonatal-item catalog-container__item">
           <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
-            <img src="./img/shop-items/item-2-4.png" alt="cream">
+            <img src="./img/shop-items/item-2-4.png" width="267" height="267" alt="Сливочное с брусничным джемом">
             <p class="catalog-container__item-price">325 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
           </div>
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочное с
@@ -268,7 +281,7 @@
         <li class="list__horizonatal-item catalog-container__item">
           <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
-            <img src="./img/shop-items/item-2-3.png" alt="cream">
+            <img src="./img/shop-items/item-2-3.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
             <p class="catalog-container__item-price">410 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
           </div>
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочно-черничное с
@@ -277,7 +290,7 @@
         <li class="list__horizonatal-item catalog-container__item">
           <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
-            <img src="./img/shop-items/item-2-2.png" alt="cream">
+            <img src="./img/shop-items/item-2-2.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
             <p class="catalog-container__item-price">315 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
           </div>
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочно-лимонное
@@ -286,7 +299,7 @@
         <li class="list__horizonatal-item catalog-container__item">
           <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
-            <img src="./img/shop-items/item-2-1.png" alt="cream">
+            <img src="./img/shop-items/item-2-1.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
             <p class="catalog-container__item-price">320 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
           </div>
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочное с
@@ -295,7 +308,7 @@
         <li class="list__horizonatal-item catalog-container__item">
           <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
-            <img src="./img/shop-items/item-3-4.png" alt="cream">
+            <img src="./img/shop-items/item-3-4.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
             <p class="catalog-container__item-price">440 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
           </div>
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочно-ванильное<br>с
@@ -304,7 +317,7 @@
         <li class="list__horizonatal-item catalog-container__item">
           <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
-            <img src="./img/shop-items/item-3-3.png" alt="cream">
+            <img src="./img/shop-items/item-3-3.png" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
             <p class="catalog-container__item-price">435 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
           </div>
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочноe с
@@ -313,7 +326,7 @@
         <li class="list__horizonatal-item catalog-container__item">
           <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
-            <img src="./img/shop-items/item-3-2.png" alt="cream">
+            <img src="./img/shop-items/item-3-2.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
             <p class="catalog-container__item-price">355 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
           </div>
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочное с кусочками
@@ -322,7 +335,7 @@
         <li class="list__horizonatal-item catalog-container__item">
           <a class="custom-button catalog-container__btn-show">Быстрый просмотр</a>
           <div class="catalog__image-price-container">
-            <img src="./img/shop-items/item-3-1.png" alt="cream">
+            <img src="./img/shop-items/item-3-1.png" width="267" height="267" alt="Сливочное с мятным сиропом">
             <p class="catalog-container__item-price">420 &#8381;<sub class="catalog-container__item-unit">/кг</sub></p>
           </div>
           <a href="" class="link-decoration catalog-container__item-name link__hovered-color">Сливочное с мятным
@@ -358,7 +371,6 @@
 
     <div class="footer__about-links-container">
       <div>
-        <!-- <a href="#" class="i-heart icon-show"></a> -->
         <a href="#" class="link-decoration footer_link link__hovered-color icon-write footer_link-bold">Для
           поставщиков</a>
       </div>
@@ -371,31 +383,12 @@
 
     <div class="footer__dev-container">
       <div class="footer_link-content">
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="footer__dev-img" src="img/logo-academy.svg" width="108" height="39" alt=""></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="footer__dev-img" src="img/logo-academy.svg" width="108" height="39" alt="html academy логотип"></a>
         <p class="footer_text-dev">Сделано в<a class="footer_link-dev link__hovered-color" href="https://htmlacademy.ru/intensive/htmlcss">
             HTML Academy </a> &copy; 2020</p>
       </div>
     </div>
   </footer>
-
-  <form id="feedback" class="feedback__form-modal visually-hidden">
-    <div class="feedback__form-content">
-      <div class="feedback__form-content_header">
-        <h2 class="feedback__form-title">Мы обязательно вам ответим!</h2>
-        <button class="i-cross feedback__close-btn" id="feedback_close"></button>
-      </div>
-
-      <input class="custom-input feedback__form_input-template feedback__form_input" type="text"
-        placeholder="Имя Фамилия" required>
-      <input class="custom-input feedback__form_input-template feedback__form_input" type="email"
-        placeholder="email@example.com" required>
-      <textarea class="custom-input feedback__form_input-template feedback__form_textarea"
-        placeholder="В свободной форме" rows="5" required></textarea>
-      <div class="feedback__form-btn_container">
-        <input class="custom-button feedback__form-btn_submit" type="submit" name="send_feedback" value="Отправить" />
-      </div>
-    </div>
-  </form>
 </body>
 
 </html>

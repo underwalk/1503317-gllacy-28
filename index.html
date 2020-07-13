@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin,cyrillic">
-  <script src="js/scripts.min.js"></script>
 </head>
 
 <body class="main-background-padua">
@@ -21,7 +20,7 @@
             <div class="dropdown-content">
               <a class="dropdown__submenu-item main-navigation__submenu-item main-navigation__submenu-item_new"
                 href="#">Новинки</a>
-              <a class="dropdown__submenu-item main-navigation__submenu-item" href="#">Сливочные</a>
+              <a class="dropdown__submenu-item main-navigation__submenu-item" href="catalog.html">Сливочные</a>
               <a class="dropdown__submenu-item main-navigation__submenu-item" href="#">Щербеты</a>
               <a class="dropdown__submenu-item main-navigation__submenu-item" href="#">Фруктовый лед</a>
               <a class="dropdown__submenu-item main-navigation__submenu-item" href="#">Мелорин</a>
@@ -43,10 +42,11 @@
           <a class="header__user-navigation_search dropdown__helper dropdown__helper-search" href="">
             <span class="i-search icon-bg"></span>
           </a>
-          <div class="header__user-navigation_search_form">
-            <input class="search-form_input" type="text" placeholder="Крем-брюле">
-          </div>
-          <input type="search" placeholder="Крем-брюле" hidden />
+          <form class="header__user-navigation_search_form" method="GET" action="https://echo.htmlacademy.ru">
+            <label for="search-input">
+              <input id="search-input" class="search-form_input" type="text" placeholder="Крем-брюле">
+            </label>
+          </form>
         </div>
 
         <div class="header__user-navigation_login-container">
@@ -54,11 +54,15 @@
             class="link-decoration header__user-navigation_container-icon header__user-navigation_icon-hover header__user-navigation_login dropdown__helper dropdown__helper-login">
             <span class="i-login icon-left"></span><span class="header__user-navigation_container-text">Вход</span>
           </a>
-          <form action="post" class="header__user-navigation_login-form">
-            <input class="custom-input header__user-navigation_login-form_input" type="text"
+          <form action="post" class="header__user-navigation_login-form" action="https://echo.htmlacademy.ru">
+            <label for="login-form_input-email">
+              <input id="login-form_input-email" class="custom-input header__user-navigation_login-form_input" type="text"
               placeholder="email@example.com">
-            <input class="custom-input header__user-navigation_login-form_input" type="text"
+            </label>
+            <label for="login-form_input-password">
+              <input id="login-form_input-password" class="custom-input header__user-navigation_login-form_input" type="password"
               placeholder="&centerdot;&centerdot;&centerdot;&centerdot;&centerdot;">
+            </label>
             <div class="login-form__down-container">
               <button class="custom-button login-form_btn-submit" name="Войти">Войти</button>
               <div class="login-form__links-container">
@@ -121,7 +125,6 @@
   </div>
 
   <div class="content">
-
     <div class="promo__block">
       <article class="promo__container promo__container_raspberry">
         <div class="promo__block_content">
@@ -229,10 +232,11 @@
           <p class="mailing-subscribe__text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе
             всего самого вкусного, что у нас происходит.
             Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form class="mailing-subscribe__input-container" action="https://echo.htmlacademy.ru">
-            <input class="custom-input mailing-subscribe__input" type="email" placeholder="email@example.com" required>
-            <button class="custom-button mailing-subscribe__button">Отправить</button>
-          </form>
+            <form class="mailing-subscribe__input-container" action="https://echo.htmlacademy.ru">
+              <label for="mailing-subscribe__input-mail"></label>
+              <input id="mailing-subscribe__input-mail" class="custom-input mailing-subscribe__input" type="email" placeholder="email@example.com" required>
+              <button class="custom-button mailing-subscribe__button">Отправить</button>
+            </form>
         </div>
       </article>
     </div>
@@ -252,7 +256,7 @@
           <a class="map__text-medium map__text-phone" href="tel:88124502525">8 812 450-25-25</a>
           <span class="map__text-small">(с 10 до 20 ежедневно)</span>
         </div>
-        <button class="custom-button map__feedback-form-button" onclick="showFeedbackModal()">Форма обратной связи</button>
+        <a class="custom-button map__feedback-form-button" onclick="showFeedbackModal()">Форма обратной связи</a>
       </div>
     </div>
   </div>
@@ -261,10 +265,10 @@
   <footer class="footer__container">
     <div class="footer__container-left">
       <ul class="footer__social-links-container">
-        <li class="list__horizonatal-item"><a href="" class="social-icon i-facebook"></a></li>
-        <li class="list__horizonatal-item"><a href="" class="social-icon i-vk"></a></li>
-        <li class="list__horizonatal-item"><a href="" class="social-icon i-instagram"></a></li>
-        <li class="list__horizonatal-item"><a href="" class="social-icon i-twitter"></a></li>
+        <li class="list__horizonatal-item"><a href="" class="social-icon i-facebook" title="facebook"></a></li>
+        <li class="list__horizonatal-item"><a href="" class="social-icon i-vk" title="vkontakte"></a></li>
+        <li class="list__horizonatal-item"><a href="" class="social-icon i-instagram" title="instagramm"></a></li>
+        <li class="list__horizonatal-item"><a href="" class="social-icon i-twitter" title="twitter"></a></li>
       </ul>
     </div>
 
@@ -282,31 +286,38 @@
 
     <div class="footer__dev-container">
       <div class="footer_link-content">
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="footer__dev-img" src="img/logo-academy.svg" width="108" height="39" alt=""></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="footer__dev-img" src="img/logo-academy.svg" width="108" height="39" alt="html academy логотип"></a>
         <p class="footer_text-dev">Сделано в<a class="footer_link-dev link__hovered-color" href="https://htmlacademy.ru/intensive/htmlcss">
             HTML Academy </a> &copy; 2020</p>
       </div>
     </div>
   </footer>
 
-  <form id="feedback" class="feedback__form-modal visually-hidden" action="https://echo.htmlacademy.ru">
+  <form id="feedback" class="feedback__form-modal visually-hidden" method="POST" action="https://echo.htmlacademy.ru">
     <div class="feedback__form-content">
       <div class="feedback__form-content_header">
         <h2 class="feedback__form-title">Мы обязательно вам ответим!</h2>
-        <button class="i-cross feedback__close-btn" id="feedback_close" type="button" onclick="hideFeedbackForm()"></button>
+        <button class="i-cross feedback__close-btn" type="button" id="feedback_close" onclick="hideFeedbackForm()"></button>
       </div>
-
-      <input class="custom-input feedback__form_input-template feedback__form_input" type="text"
-        placeholder="Имя Фамилия" required>
-      <input class="custom-input feedback__form_input-template feedback__form_input" type="email"
+      <label for="feedback__form_input-message">
+        <input id="feedback__form_input-message" class="custom-input feedback__form_input-template feedback__form_input" type="text"
+          placeholder="Имя Фамилия" required>
+      </label>
+      <label for="feedback__form_input-email">
+        <input id="feedback__form_input-email" class="custom-input feedback__form_input-template feedback__form_input" type="email"
         placeholder="email@example.com" required>
-      <textarea class="custom-input feedback__form_input-template feedback__form_textarea"
+      </label>
+      <label for="feedback__form_input-message">
+        <textarea id="feedback__form_input-message" class="custom-input feedback__form_input-template feedback__form_textarea"
         placeholder="В свободной форме" rows="5" required></textarea>
+      </label>
       <div class="feedback__form-btn_container">
-        <button class="custom-button feedback__form-btn_submit" type="submit" name="send_feedback" value="Отправить">Отправить</button>
+        <input class="custom-button feedback__form-btn_submit" type="submit" name="send_feedback" value="Отправить"/>
       </div>
     </div>
   </form>
+  
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
