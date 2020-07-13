@@ -57,7 +57,7 @@
             class="link-decoration header__user-navigation_container-icon header__user-navigation_icon-hover header__user-navigation_login dropdown__helper dropdown__helper-login">
             <span class="i-login icon-left"></span><span class="header__user-navigation_container-text">Вход</span>
           </a>
-          <form action="post" action="https://echo.htmlacademy.ru" class="header__user-navigation_login-form">
+          <form method="POST" action="https://echo.htmlacademy.ru" class="header__user-navigation_login-form">
             <label for="login-form_input-email">
               <input id="login-form_input-email" class="custom-input header__user-navigation_login-form_input" type="text"
               placeholder="email@example.com">
@@ -156,11 +156,11 @@
             <legend class="filter__text-label filter__text-label_price">Цена: 100 &#8381; - 500 &#8381;</legend>
               <div class="filter__doubled_slider-container">
                 <label for="filter__price-range">
-                  <input id="filter__price-range" class="filter__price-range filter__bordered-background" type="range" id="filter-range-price-1"
+                  <input id="filter__price-range" class="filter__price-range filter__bordered-background" type="range"
                   name="price" min="100" max="500" value="150">
                 </label>
                 <label for="filter__price-range_second">
-                  <input id="filter__price-range_second" class="filter__price-range filter__price-range_second filter__bordered-background slider__thumb slider__track" type="range" id="filter-range-price-2"
+                  <input id="filter__price-range_second" class="filter__price-range filter__price-range_second filter__bordered-background slider__thumb slider__track" type="range"
                   name="price" min="100" max="500" value="420">
                 </label>
               </div>
